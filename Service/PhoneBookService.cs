@@ -53,7 +53,12 @@ namespace Service
             return _repo.GetContacts();
         }
 
-        public bool SaveContact(Contact model)
+        public bool SaveContact(List<Contact> contacts)
+        {
+            return _repo.SaveContact(contacts);
+        }
+
+        public bool SaveContact(Contact model)//edit contact
         {
             var contacts = GetContacts();
 

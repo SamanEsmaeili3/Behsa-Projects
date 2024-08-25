@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
         PhoneBookService _service = new PhoneBookService();
 
         string selectedId = "";
+        bool edited = false;
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace WindowsFormsApp1
         
         
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//save button
         {
            
             var contacts = _service.GetContacts();
@@ -51,7 +52,7 @@ namespace WindowsFormsApp1
 
 
 
-            var saveResult = _service.SaveContact(contacts);
+            var saveResult = _service.SaveContact(newContact);//contacts
             if (saveResult)
             {
                 FillGridView(contacts);
@@ -104,6 +105,7 @@ namespace WindowsFormsApp1
                 txt_firstname.Text = contactForEdit.Firstname;
                 txt_lastname.Text = contactForEdit.Lastname;
                 txt_phoneNumber.Text = contactForEdit.PhoneNumber;
+                edited = true;
             }
             catch (Exception)
             {

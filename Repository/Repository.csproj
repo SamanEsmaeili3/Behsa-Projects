@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="PhoneBookRespository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserPhoneBookRepository.cs" />
     <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>

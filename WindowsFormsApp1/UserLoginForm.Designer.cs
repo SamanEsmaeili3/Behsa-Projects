@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿using System;
+
+namespace WindowsFormsApp1
 {
     partial class UserLoginForm
     {
@@ -87,6 +89,7 @@
             this.btn_Signup.TabIndex = 5;
             this.btn_Signup.Text = "Sign up";
             this.btn_Signup.UseVisualStyleBackColor = true;
+            this.btn_Signup.Click += new System.EventHandler(this.btn_Signup_Click);
             // 
             // UserLoginForm
             // 
@@ -100,10 +103,17 @@
             this.Controls.Add(this.lbl_Passworde);
             this.Controls.Add(this.lbl_usename);
             this.Name = "UserLoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserLoginForm";
+            this.Load += new System.EventHandler(this.UserLoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void UserLoginForm_Load(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         #endregion

@@ -25,7 +25,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "6b6d6603-b2c9-41d2-b728-381e029fac81": {
+      "ProjectGuid": "6b6d6603-b2c9-41d2-b728-381e029fac81",
+      "DisplayName": "Repository",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

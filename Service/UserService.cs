@@ -34,8 +34,8 @@ namespace Service
 
         public User GetUserByUserName(string userName)
         {
-            //TO DO:
-            //exception handeling
+            //TO DO: exception handeling
+        
             var users = GetUsers();
             var user = users.FirstOrDefault(x => x.userName == userName);
             return user;

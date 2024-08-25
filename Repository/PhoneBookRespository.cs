@@ -14,6 +14,25 @@ namespace Repository
     {
 
         string filePath = @"D:\data.json";
+
+        //public void SetFilePath(User user)
+        //{
+        //    try
+        //    {
+        //        if(user != null) {
+        //            filePath = @"D:\" + user.userName + " data.json";
+        //            if (!System.IO.File.Exists(filePath))
+        //            {
+        //                System.IO.File.Create(filePath);
+        //            }
+        //        }
+                
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //    }
+        //}
         
         public PhoneBookRespository()
         {
@@ -22,6 +41,26 @@ namespace Repository
                 System.IO.File.Create(filePath);
             }
 
+        }
+
+        public PhoneBookRespository(User user)
+        {
+            try
+            {
+                if (user != null)
+                {
+                    filePath = @"D:\" + user.userName + " data.json";
+                    if (!System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Create(filePath);
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
         }
         public List<Contact> GetContacts()
         {
@@ -76,6 +115,8 @@ namespace Repository
 
 
         }
+
+
 
     }
 }
