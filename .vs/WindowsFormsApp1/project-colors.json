@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "869c2731-83c7-4fba-98b9-d52719565e5e": {
+      "ProjectGuid": "869c2731-83c7-4fba-98b9-d52719565e5e",
+      "DisplayName": "MvcApplication",
+      "ColorIndex": 0
+    },
+    "77a83e52-7789-4673-9413-5663a16db3b7": {
+      "ProjectGuid": "77a83e52-7789-4673-9413-5663a16db3b7",
+      "DisplayName": "WindowsFormsApp1",
+      "ColorIndex": 1
+    },
+    "212c3646-cfc0-433d-9d41-71a660b5ed5a": {
+      "ProjectGuid": "212c3646-cfc0-433d-9d41-71a660b5ed5a",
+      "DisplayName": "Service",
+      "ColorIndex": 2
+    },
+    "2d91741d-b900-428f-b5ad-735a142a83ff": {
+      "ProjectGuid": "2d91741d-b900-428f-b5ad-735a142a83ff",
+      "DisplayName": "Models",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

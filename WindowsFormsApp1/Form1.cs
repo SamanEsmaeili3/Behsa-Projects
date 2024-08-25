@@ -19,11 +19,13 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
+        Models.Contact contact1 = new Models.Contact();
+        
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
             var contacts = _service.GetContacts();
 
             var newContact = new Contact();
@@ -126,5 +128,6 @@ namespace WindowsFormsApp1
                 clearForm();
             }
         }
+
     }
 }
